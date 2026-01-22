@@ -20,6 +20,7 @@ const App = () => {
     setIsLoading(true);
 
     const URL = "https://weatherapi-com.p.rapidapi.com/forecast.json";
+    const API_KEY = import.meta.env.VITE_RAPID_API_KEY;
 
     const options = {
       method: "GET",
@@ -29,7 +30,7 @@ const App = () => {
         days: "3",
       },
       headers: {
-        "x-rapidapi-key": "a9c4ed52ddmsh9d992ad0f516bdep1de089jsn99532e42a26a",
+        "x-rapidapi-key": API_KEY,
         "x-rapidapi-host": "weatherapi-com.p.rapidapi.com",
       },
     };
