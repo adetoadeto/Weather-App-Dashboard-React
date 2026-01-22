@@ -11,8 +11,9 @@ A Weather App Dashboard that provides weather related data of a desired location
 - Frontend
     - HTML
     - CSS
-    - JavaScript
-    - Fetch API 
+    - React
+    - Axios
+    - Rest API
 
 - Deployment
     - Render
