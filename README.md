@@ -4,7 +4,7 @@ A Weather App Dashboard that provides weather related data of a desired location
 
 ## How to Run the App
 
-- Visit https://todo-app-pgyr.onrender.com
+- Visit https://weather-app-dashboard-react.onrender.com/
 
 ## Technologies Used
 
