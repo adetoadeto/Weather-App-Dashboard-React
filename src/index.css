@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+:root {
+    --font-family: "DM Sans", sans-serif;
+    --navy-blue: rgb(0, 0, 82); 
+    --white: white;
+    --light-blue: rgb(228, 250, 255);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 2.5rem 3rem;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+    font-size: 1rem;
+    color: var(--navy-blue);
+    /* background-color: rgb(255, 243, 209); */
+    background-color: rgba(228, 250, 255, 0.521);
+}
+li {
+    list-style: none;
+}
+nav, 
+nav form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--navy-blue);
+}
+
+nav h1 {
+     color: var(--navy-blue);
+     font-size: 2rem;
+}
+
+nav form {
+    border-radius: 5px;
+    padding: 0 1rem;
+    border: 0.3px solid var(--navy-blue);
+}
+nav form input {
+    background-color: transparent;
+    border: none;
+    padding: 0.5rem 0;
+    width: 100%;
+}
+nav form input:focus {
+   outline: none;
+}
+nav form input::placeholder {
+    color: var(--navy-blue);
+}
+
+nav form button {
+    background-color: transparent;
+    border: none;
+}
+nav form button:hover {
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+#delay-text {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+main {
+    height: 280px;
+    margin: 2rem 0 3rem 0;
+    background-image: url("./assets/sunrise.jpg");
+    background-size: cover;
+    background-position: top 50% left;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(125, 162, 190, 0.555);
+    /* box-shadow: 10px 15px 10px rgba(53, 53, 53, 0.075); */
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 2rem;
+    color: var(--white);
+    font-size: 1.5rem;
+}
+main .left-content > div {
+    display: flex; 
+    align-items: center;
+}
+
+main .left-content #temperature-value {
+    font-size: 5rem;
+}
+main .left-content .location {
+    margin-top: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+main .right-content {
+    text-align: end;   
+}
+main .right-content #sunrise-time {
+    font-weight: bold; 
+}
+
+.weather-highlight, .forecast {
+    border-radius: 10px;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 0 20px rgba(187, 187, 187, 0.5);
+}
+
+.weather-highlight {
+    background-color: var(--light-blue);
+    width: 70%;
+    margin: auto;
+}
+
+.weather-highlight h2 {
+    font-size: 1.5rem;
+}
+.weather-highlight_items {
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem 1.5rem;
+}
+.weather-highlight_items > div {
+    background-color: var(--white);
+    padding: 1rem;
+    border-radius: 15px;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.weather-highlight_items .heading {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+#uv-index {
+    color: #8e24aa;
+}
+#wind {
+    color: #00897b;
+}
+#visibility {
+    color: #424242;
+}
+#rainfall {
+    color: #1565c0;
+}
+#humidity {
+    color: #039be5;
+}
+#snow {
+    color: #1e88e5;
+}
+.weather-highlight_items > div h3 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.weather-highlight_items > div .bottom-label {
+    font-weight: bold;
+}
+.weather-highlight_items > div .top-label {
+    color: rgb(102, 102, 102);
+}
+
+
+.forecast {
+    background-color: var(--white);
+    margin-top: 5rem; 
+    width: auto;
+    
+}
+
+.forecast h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.forecast ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem ;
+    font-weight: 600;
+}
+
+.forecast ul li {
+    width: 150px;
+    /* min-width: 10%; */
+    border-radius: 10px;
+    background-color: var(--light-blue);
+    padding: 1.2rem;
+    text-align: center;
+    line-height: 3;
+    box-shadow: 0 0 5px rgba(172, 172, 172, 0.562);
+}
+.forecast ul li .day_of_the_week {
+    font-weight: bold;
+    font-weight: 3rem;
+}
+.gallery {
+    margin-top: 1.5rem;
+    display: flex;
+    height: 520px;
+}
+.gallery img {
+    width: 50%;
+    object-fit: cover;
+    height: 100%;
+    width: 50%;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+}
+.gallery #rainy {
+    border-radius: 10px 0 0 10px;
+}
+.gallery #sunset {
+    border-radius: 0 10px 10px 0;
+}
+
+@media (max-width: 1024px) {
+    body {
+        padding: 2rem 1.5rem;
+    }
+    nav {
+        display: block;
+    }
+    nav h1 {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    main {
+        display: block;
+    }
+    main .left-content #temperature-value {
+        font-size: 3rem;
+    }
+    main .right-content {
+        margin-top: 1.5rem;
+    }
+    .weather-highlight_items {
+        grid-template-columns: 1fr;
+    }  
+}
+
+@media (max-width: 480px) {
+    .forecast h4 {
+        text-align: center;
+    }
+
+    .forecast ul li {
+        width: 100%;
+    }
+}
+
